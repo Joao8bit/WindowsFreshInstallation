@@ -1,7 +1,7 @@
 :: Install choco .exe and add choco to PATH
 @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
 
-:: Browsers
+:::: Browsers
 :: choco install googlechrome -y
 choco install firefox -y
 choco install chromium -y
@@ -10,14 +10,14 @@ choco install brave -y
 :: choco install opera -y
 :: choco install tor-browser -y
 
-:: Git
+:::: Git
 choco install git -y
 
-:: Server tools
+:::: Server tools
 choco install winscp.install -y
 choco install filezilla -y
 
-:: VM
+:::: VM
 choco install vmware-workstation-player -y
 choco install virtualbox -y
 
@@ -48,7 +48,7 @@ choco install davinci-resolve -y
 choco install discord -y
 choco install microsoft-teams -y
 
-:: Tools
+:::: Tools
 choco install 7zip -y
 choco install steam -y
 choco install qbittorrent -y
